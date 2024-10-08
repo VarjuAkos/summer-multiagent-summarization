@@ -1,0 +1,12 @@
+[
+  {
+    "date": "2024-06-17",
+    "type": "Sprint Planning",
+    "summary": "Conducted pdroject kickoff and initial sprint planning for HealthTrack Pro. The team reviewed project goals, prioritized MVP features, created an initial product backlog, and planned the first sprint.",
+    "key_decisions": [
+      "Defined MVP features and created initial product backlog",
+      "Set sprint duration to 2 weeks and established team's initial velocity",
+      "Scheduled regular team meetings including Daily Scrums, Sprint Reviews, and Retrospectives"
+    ]
+  }
+]
