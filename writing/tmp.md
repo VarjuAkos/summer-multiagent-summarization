@@ -136,3 +136,109 @@ model comes in so
 \end{tikzpicture}
 \end{document}
 
+1.
+GOALS_TASK_PURPOSE_IDENTIFIER_PROMPT
+WORKFLOW
+company_data -
+employee_profiles -
+project_general -
+project_requirements -
+project_state -
+meeting_history -
+meeting_note - 
+: goals_task_purpose_output -
+
+2.
+REFINED_INSIGHTS_PROMPT
+WORKFLOW
+company_data -
+employee_profiles -
+project_general -
+project_requirements -
+project_state -
+meeting_history -
+meeting_note -
+goals_task_purpose_output -
+: refined_insights_output - 
+
+3. 
+TASK_BREAKDOWN_PROMPT
+WORKFLOW
+employee_profiles -
+project_general -
+project_requirements -
+meeting_note -
+refined_insights_output -
+: task_breakdown_output
+
+4.
+BACKLOG_SUGGESTION_PROMPT
+WORKFLOW -
+company_data-
+project_general-
+project_requirements-
+project_state-
+meeting_note-
+task_breakdown_output-
+employee_profiles-
+: backlog_suggestion_output
+
+5.
+JSON_BACKLOG_PROMPT
+WORKFLOW -
+backlog_suggestion_output -
+: json_backlog
+
+6.
+SPRINT_PLANNING_DRAFT_PROMPT
+WORKFLOW -
+company_data -
+employee_profiles -
+project_general -
+project_requirements -
+project_state -
+meeting_history -
+meeting_note -
+task_breakdown_output -
+: sprint_planning_draft
+
+7.
+SPRINT_PLANNING_DIAGRAM_PROMPT
+WORKFLOW -
+employee_profiles -
+task_breakdown_output -
+: sprint_planning_diagram
+
+8. 
+SPRINT_SUMMARY_COMPILE_PROMPT
+WORKFLOW -
+sprint_planning_draft -
+sprint_planning_diagram -
+: sprint_summary_compile
+
+9.
+PERSONAL_SUMMARY_DIAGRAM_PROMPT
+WORKFLOW -
+meeting_note -
+sprint_summary_compile -
+employee_profiles -
+backlog_suggestion_output 
+
+10.
+PERSONAL_SUMMARY_COMPILE_PROMPT
+WORKFLOW
+meeting_note
+sprint_summary_compile
+employee_profiles
+backlog_suggestion_output
+
+goals_task_purpose_identifier_node
+refined_insights_node
+task_breakdown_node
+backlog_suggestion_node
+json_backlog_node
+sprint_planning_draft_node
+sprint_planning_diagram_node
+sprint_summary_compile_node
+personal_summary_diagram_node
+personal_summary_compile_node

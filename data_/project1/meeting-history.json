@@ -1,12 +1,26 @@
 [
   {
-    "date": "2024-06-17",
-    "type": "Sprint Planning",
-    "summary": "Conducted pdroject kickoff and initial sprint planning for HealthTrack Pro. The team reviewed project goals, prioritized MVP features, created an initial product backlog, and planned the first sprint.",
+    "date": "2024-06-18",
+    "type": "Daily Scrum",
+    "summary": "The Daily Scrum focused on synchronizing efforts for the HealthTrack Pro project's initial sprint, currently at 15% completion. Team members shared progress on user authentication, profile management, and activity tracking implementation, while addressing potential risks related to data accuracy and performance.",
     "key_decisions": [
-      "Defined MVP features and created initial product backlog",
-      "Set sprint duration to 2 weeks and established team's initial velocity",
-      "Scheduled regular team meetings including Daily Scrums, Sprint Reviews, and Retrospectives"
+      "Prioritize optimization of database queries for improved data aggregation performance",
+      "Implement additional data validation strategies to enhance manual logging accuracy",
+      "Schedule a separate meeting between frontend and backend teams to streamline activity tracking feature integration"
+    ]
+  },
+  {
+    "meetings": [
+      {
+        "date": "2024-06-17",
+        "type": "Sprint Planning",
+        "summary": "Initial Sprint Planning meeting for HealthTrack Pro project to launch the project and establish the framework for the first sprint. The team reviewed project requirements, set sprint goals, and broke down user stories into tasks.",
+        "key_decisions": [
+          "Established a 2-week sprint duration focusing on user authentication and basic profile setup",
+          "Prioritized MVP features for Phase 1, including core functionalities like user authentication and basic activity tracking",
+          "Decided to use Jira for project management and sprint tracking"
+        ]
+      }
     ]
   }
 ]

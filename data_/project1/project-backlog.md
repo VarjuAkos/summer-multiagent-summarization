@@ -2,29 +2,31 @@
   "backlog": [
     {
       "id": "US001",
-      "title": "User Registration",
-      "description": "As a new user, I want to create an account so that I can start tracking my health data.",
+      "title": "Manually log daily activities",
+      "description": "As a user, I want to manually log my daily activities to track my health progress.",
       "status": "Not Started",
       "priority": "High",
-      "estimated_effort": "8 story points",
-      "assigned_to": "Alex Rodriguez",
+      "estimated_effort": "5 story points",
+      "assigned_to": "Emily",
       "tags": [
         "feature",
-        "authentication"
+        "frontend",
+        "activity-tracking"
       ],
       "dependencies": []
     },
     {
       "id": "US002",
-      "title": "User Login",
-      "description": "As a registered user, I want to log in to my account to access my health data.",
+      "title": "View health metrics dashboard",
+      "description": "As a user, I want to view a dashboard of my basic health metrics to understand my overall health status.",
       "status": "Not Started",
       "priority": "High",
       "estimated_effort": "5 story points",
-      "assigned_to": "Alex Rodriguez",
+      "assigned_to": "Liam",
       "tags": [
         "feature",
-        "authentication"
+        "frontend",
+        "dashboard"
       ],
       "dependencies": [
         "US001"
@@ -32,170 +34,146 @@
     },
     {
       "id": "US003",
-      "title": "User Profile Management",
-      "description": "As a user, I want to view and edit my profile information to keep my data up to date.",
-      "status": "Not Started",
-      "priority": "Medium",
-      "estimated_effort": "5 story points",
-      "assigned_to": "Emily Watson",
-      "tags": [
-        "feature",
-        "frontend"
-      ],
-      "dependencies": [
-        "US001"
-      ]
-    },
-    {
-      "id": "US004",
-      "title": "Basic Activity Tracking",
-      "description": "As a user, I want to manually log my daily activities to track my health progress.",
-      "status": "Not Started",
-      "priority": "High",
-      "estimated_effort": "8 story points",
-      "assigned_to": "Michael Kim",
-      "tags": [
-        "feature",
-        "backend"
-      ],
-      "dependencies": [
-        "US001"
-      ]
-    },
-    {
-      "id": "US005",
-      "title": "Basic Health Metrics Dashboard",
-      "description": "As a user, I want to view a dashboard of my basic health metrics to understand my overall health status.",
-      "status": "Not Started",
-      "priority": "High",
-      "estimated_effort": "13 story points",
-      "assigned_to": "Emily Watson",
-      "tags": [
-        "feature",
-        "frontend"
-      ],
-      "dependencies": [
-        "US004"
-      ]
-    },
-    {
-      "id": "US006",
-      "title": "Simplified Nutrition Logging",
+      "title": "Log daily food intake",
       "description": "As a user, I want to log my daily food intake to track my nutrition.",
       "status": "Not Started",
       "priority": "Medium",
-      "estimated_effort": "8 story points",
-      "assigned_to": "Michael Kim",
+      "estimated_effort": "4 story points",
+      "assigned_to": "Emily",
       "tags": [
         "feature",
-        "backend"
+        "frontend",
+        "nutrition"
       ],
-      "dependencies": [
-        "US001"
-      ]
+      "dependencies": []
     },
     {
       "id": "T001",
-      "title": "Set up project structure",
-      "description": "Set up initial project structure, create repositories, configure ESLint and Prettier",
-      "status": "In Progress",
+      "title": "Implement backend API for activity data",
+      "description": "Create backend API for storing and retrieving activity data",
+      "status": "Not Started",
       "priority": "High",
       "estimated_effort": "3 story points",
-      "assigned_to": "Alex Rodriguez",
+      "assigned_to": "Michael",
       "tags": [
-        "technical",
-        "setup"
+        "backend",
+        "api",
+        "activity-tracking"
       ],
       "dependencies": []
     },
     {
       "id": "T002",
-      "title": "Configure frontend environment",
-      "description": "Set up frontend environment with React, TypeScript, and Tailwind CSS",
+      "title": "Develop data visualization for activity trends",
+      "description": "Create data visualization components for displaying activity trends",
       "status": "Not Started",
-      "priority": "High",
+      "priority": "Medium",
       "estimated_effort": "3 story points",
-      "assigned_to": "Emily Watson",
+      "assigned_to": "Emily",
       "tags": [
-        "technical",
-        "setup",
-        "frontend"
+        "frontend",
+        "data-visualization",
+        "activity-tracking"
       ],
       "dependencies": [
+        "US001",
         "T001"
       ]
     },
     {
       "id": "T003",
-      "title": "Set up backend structure",
-      "description": "Set up backend structure and initial database schema",
+      "title": "Implement backend API for health data aggregation",
+      "description": "Create backend API for aggregating health data for the dashboard",
       "status": "Not Started",
       "priority": "High",
-      "estimated_effort": "5 story points",
-      "assigned_to": "Michael Kim",
+      "estimated_effort": "4 story points",
+      "assigned_to": "Michael",
       "tags": [
-        "technical",
-        "setup",
-        "backend"
+        "backend",
+        "api",
+        "dashboard"
       ],
-      "dependencies": [
-        "T001"
-      ]
+      "dependencies": []
     },
     {
       "id": "T004",
-      "title": "Configure CI/CD pipeline",
-      "description": "Set up CI/CD pipeline with Jenkins and configure Docker environments",
+      "title": "Develop health metrics visualization components",
+      "description": "Create data visualization components for displaying health metrics on the dashboard",
       "status": "Not Started",
-      "priority": "High",
-      "estimated_effort": "5 story points",
-      "assigned_to": "Olivia Martinez",
+      "priority": "Medium",
+      "estimated_effort": "4 story points",
+      "assigned_to": "Emily",
       "tags": [
-        "technical",
-        "devops"
+        "frontend",
+        "data-visualization",
+        "dashboard"
       ],
       "dependencies": [
-        "T001"
+        "US002",
+        "T003"
       ]
     },
     {
       "id": "T005",
-      "title": "Create design system",
-      "description": "Create shared Figma project, start building component library and design guidelines",
+      "title": "Implement backend API for nutrition data",
+      "description": "Create backend API for storing and retrieving nutrition data",
       "status": "Not Started",
-      "priority": "High",
-      "estimated_effort": "8 story points",
-      "assigned_to": "Liam Foster",
+      "priority": "Medium",
+      "estimated_effort": "3 story points",
+      "assigned_to": "Michael",
       "tags": [
-        "design",
-        "ui/ux"
+        "backend",
+        "api",
+        "nutrition"
       ],
       "dependencies": []
     },
     {
       "id": "T006",
-      "title": "Set up project documentation",
-      "description": "Set up Confluence space for project documentation",
+      "title": "Integrate basic food database",
+      "description": "Integrate a simplified food database for initial nutrition logging feature",
       "status": "Not Started",
-      "priority": "Medium",
-      "estimated_effort": "2 story points",
-      "assigned_to": "Sarah Chen",
+      "priority": "Low",
+      "estimated_effort": "3 story points",
+      "assigned_to": "Michael",
       "tags": [
-        "documentation"
+        "backend",
+        "database",
+        "nutrition"
       ],
-      "dependencies": []
+      "dependencies": [
+        "T005"
+      ]
     },
     {
       "id": "T007",
-      "title": "Research security standards",
-      "description": "Research security standards and compliance requirements (e.g., HIPAA) for health data",
+      "title": "Perform testing and quality assurance",
+      "description": "Develop and execute test plans for new features",
       "status": "Not Started",
       "priority": "High",
-      "estimated_effort": "5 story points",
-      "assigned_to": "Olivia Martinez",
+      "estimated_effort": "4 story points",
+      "assigned_to": "Olivia",
       "tags": [
-        "research",
-        "security"
+        "testing",
+        "quality-assurance"
+      ],
+      "dependencies": [
+        "US001",
+        "US002",
+        "US003"
+      ]
+    },
+    {
+      "id": "T008",
+      "title": "Continue security audit",
+      "description": "Ongoing security audit and support for backend development",
+      "status": "In Progress",
+      "priority": "High",
+      "estimated_effort": "8 story points",
+      "assigned_to": "Alex",
+      "tags": [
+        "security",
+        "backend"
       ],
       "dependencies": []
     }
