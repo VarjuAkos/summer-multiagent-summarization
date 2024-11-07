@@ -1,0 +1,32 @@
+[
+  {
+    "date": "2024-06-11",
+    "type": "Daily Scrum",
+    "summary": "Daily sync focused on Sprint 1 progress, particularly development environment setup and authentication system implementation. Team discussed Jenkins pipeline configuration, Docker setup, and JWT authentication progress, with special attention to upcoming database schema design session.",
+    "key_decisions": [
+      "Technical session scheduled after standup for database schema design review",
+      "Alex and Emily to coordinate on JWT token refresh mechanism implementation",
+      "Olivia to prioritize resolving AWS credential permission issues for pipeline setup"
+    ]
+  },
+  {
+    "date": "2024-06-10",
+    "type": "Sprint Planning",
+    "title": "Initial Sprint Planning Meeting - HealthTrack Pro",
+    "duration": "2 hours",
+    "summary": "Initial sprint planning meeting for HealthTrack Pro MVP phase focusing on core features including user authentication, activity tracking, and basic dashboard implementation. The meeting covered technical architecture decisions, development environment setup, and UI/UX implementation planning with the full development team.",
+    "key_decisions": [
+      "Team will focus on MVP features: user authentication, basic profile setup, core activity tracking, and basic dashboard implementation",
+      "Technical architecture will be discussed and led by Alex Rodriguez, with emphasis on security considerations for authentication",
+      "UI/UX wireframes for core MVP features to be presented by Liam Foster to guide initial development"
+    ],
+    "attendees": [
+      "Sarah",
+      "Alex",
+      "Emily",
+      "Michael",
+      "Olivia",
+      "Liam"
+    ]
+  }
+]

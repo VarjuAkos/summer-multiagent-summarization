@@ -1,0 +1,22 @@
+[
+  {
+    "date": "2024-06-11",
+    "type": "Daily Scrum",
+    "summary": "First daily scrum meeting of Sprint 1 focusing on development environment setup and initial sprint backlog items. Team members discussed progress on user registration implementation, CI/CD pipeline configuration, and wireframe modifications.",
+    "key_decisions": [
+      "Development environment setup to be completed by all team members as top priority",
+      "Alex Rodriguez to focus on resolving JWT token implementation challenges before proceeding with user registration",
+      "HIPAA compliance requirements to be reviewed and documented before implementing sensitive features"
+    ]
+  },
+  {
+    "date": "2024-06-10",
+    "type": "Sprint Planning",
+    "summary": "Initial sprint planning meeting for HealthTrack Pro's MVP phase focusing on core functionality including user authentication, activity tracking, and basic dashboard implementation. The team discussed technical architecture decisions, established sprint duration, and defined MVP requirements while addressing potential challenges in data privacy and frontend architecture.",
+    "key_decisions": [
+      "Established 2-week sprint duration with focus on MVP features starting with user authentication and basic profile setup",
+      "Team will prioritize HIPAA compliance and data encryption strategies in the initial architecture",
+      "Agreed to implement CI/CD pipeline with Docker and AWS infrastructure for robust DevOps setup"
+    ]
+  }
+]

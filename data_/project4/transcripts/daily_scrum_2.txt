@@ -1,0 +1,39 @@
+[Sarah Chen] Good morning everyone! It's 10 AM, and welcome to our daily scrum for Sprint 1, Day 2. Let's start with Olivia's update on the development environment setup. Olivia?
+
+[Olivia Martinez] Thanks, Sarah. I've been working on the Jenkins pipeline configuration since yesterday afternoon. Made good progress on the basic pipeline structure, but I've hit a small snag with AWS credentials. Apparently, some of our IAM roles need updating to allow proper access to the ECR registry. I'm working with AWS support to resolve this. As for the Docker containers, I've got the frontend and backend containers running locally, but I'm still fine-tuning the PostgreSQL container configuration to ensure proper data persistence.
+
+[Sarah Chen] How long do you think it'll take to resolve the AWS credentials issue?
+
+[Olivia Martinez] I'm hoping to have it sorted by end of day. Once that's resolved, I can finish the pipeline setup. The Docker compose files are mostly ready, just need to test them with the updated credentials.
+
+[Sarah Chen] Thanks, Olivia. Alex, can you update us on the authentication system implementation?
+
+[Alex Rodriguez] Sure. I've got the basic JWT implementation structure set up on the backend. I'm using jsonwebtoken library with RS256 algorithm for better security. Currently working on the token refresh mechanism, which is a bit tricky because we need to consider mobile devices that might be offline for extended periods. Emily and I had a quick chat yesterday about token storage strategy. Emily, want to share your progress on the frontend components?
+
+[Emily Watson] Yes, I've created the basic authentication components - login, register, and password reset forms. They're functional but not styled yet. I need to sync with Liam about the component styling later today. One thing I'm concerned about is how we're handling form validation. Alex, I think we should discuss whether we want to implement client-side validation using Yup or stick with basic HTML5 validation.
+
+[Alex Rodriguez] Good point. Let's discuss that right after this meeting. We should also consider accessibility requirements for the forms.
+
+[Sarah Chen] Michael, you're leading the technical session on database schema after this. How's the preparation going?
+
+[Michael Kim] I've drafted the initial user profile schema and mapped out the relationships between different entities. My main concern is how we'll structure the JWT refresh tokens in the database. Alex, I'll need your input on this during the technical session. I'm also thinking about how to optimize the schema for the activity tracking feature we'll be implementing next. I've prepared some diagrams showing different approaches we could take.
+
+[Sarah Chen] Sounds good. Liam, how are the wireframes coming along?
+
+[Liam Foster] I've finalized most of the authentication flow wireframes in Figma. Emily, I noticed we might need to adjust some component layouts for better mobile responsiveness, especially the registration form. I'm also working on the component library documentation. Should have that ready to share by early afternoon. One thing I wanted to bring up - I've included some micro-interactions in the design, particularly for form submission feedback. Emily, we should discuss if these are feasible to implement in our timeline.
+
+[Emily Watson] Those micro-interactions sound great, but you're right - we should discuss the implementation complexity. Maybe we can prioritize which ones give us the most impact for the MVP.
+
+[Sarah Chen] Olivia, anything to add about the testing framework?
+
+[Olivia Martinez] Yes, I'm setting up Cypress for end-to-end testing, but I'm blocked until we have the development environment fully configured. I've started writing some test cases for the authentication flow, but I'll need to coordinate with Emily once she finalizes the component structure. Also, I'm planning to set up Jest for unit testing on both frontend and backend.
+
+[Sarah Chen] Thanks everyone. Just a reminder about the technical session right after this for the database schema review. Also, Emily and Liam, could you schedule your component styling sync for today? Any final blockers or concerns anyone wants to raise?
+
+[Alex Rodriguez] Just want to mention that I'll need about an hour with Michael before the technical session to align on the JWT storage requirements. Michael, does 10:30 work for you?
+
+[Michael Kim] Yes, that works. I'll bring the current schema diagrams to that discussion.
+
+[Sarah Chen] Great! If there's nothing else, let's wrap up here. Emily and Liam, please catch up right after this for your sync, and everyone else, we'll see you at the technical session at 11. Remember to update your Jira tickets with current status. Have a productive day, everyone!
+
+FINISHED
